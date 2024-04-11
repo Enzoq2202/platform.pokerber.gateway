@@ -18,6 +18,11 @@ spring:
           predicates:
             - Path=/accounts/**
 
+        - id: store-winrecord
+          uri: lb://store-winrecord
+          predicates:
+            - Path=/winrecord/**
+
         - id: insper
           uri: https://www.insper.edu.br
           predicates:
