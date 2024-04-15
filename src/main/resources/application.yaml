@@ -17,11 +17,16 @@ spring:
           uri: lb://store-account
           predicates:
             - Path=/accounts/**
-
+        
         - id: store-winrecord
           uri: lb://store-winrecord
           predicates:
             - Path=/winrecord/**
+
+        - id: store-tournamentmanager
+          uri: lb://store-tournamentmanager
+          predicates:
+            - Path=/tournaments/**
 
         - id: insper
           uri: https://www.insper.edu.br
