@@ -53,4 +53,15 @@ api:
       POST /auth/register,
       POST /auth/login,
       ANY /auth/actuator,
-      ANY /accounts/actuator
+      ANY /accounts/actuator,
+      ANY /winrecord/actuator,
+      ANY /tournaments/actuator,
+      ANY /gateway/actuator,
+      ANY /auth/swagger**,
+      ANY /accounts/swagger**,
+      ANY /winrecord/swagger**,
+      ANY /tournaments/swagger**,
+      ANY /auth/v3**,
+      ANY /accounts/v3**,
+      ANY /winrecord/v3**,
+      ANY /tournaments/v3**
